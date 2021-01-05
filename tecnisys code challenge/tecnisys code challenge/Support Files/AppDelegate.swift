@@ -13,7 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let presenter = MainPresenter()
+        let client = NetworkService()
+        let presenter = MainPresenter(client)
         let viewController = MainViewController(with: presenter)
         let navigationController = UINavigationController(rootViewController: viewController)
 

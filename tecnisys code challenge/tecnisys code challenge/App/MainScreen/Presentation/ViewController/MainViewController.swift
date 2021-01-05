@@ -23,6 +23,7 @@ class MainViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter?.viewLoaded()
     }
 
     override func viewWillAppear(_ animated: Bool) {

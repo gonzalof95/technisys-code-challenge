@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (5.4.1)
+  - AlamofireRSSParser (2.3.0):
+    - Alamofire (~> 5.0)
+  - lottie-ios (3.1.9)
+  - PureLayout (3.1.6)
+  - RxSwift (6.0.0)
+  - SDWebImage (5.10.2):
+    - SDWebImage/Core (= 5.10.2)
+  - SDWebImage/Core (5.10.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlamofireRSSParser
+  - lottie-ios
+  - PureLayout
+  - RxSwift
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireRSSParser
+    - lottie-ios
+    - PureLayout
+    - RxSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  AlamofireRSSParser: ced366c481685cb6ed24e6d50b7b7a5a47c2da6d
+  lottie-ios: 3a3758ef5a008e762faec9c9d50a39842f26d124
+  PureLayout: bd3c4ec3a3819ad387c99ebb72c6b129c3ed4d2d
+  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
+  SDWebImage: b969dcfc02c40a5da71eac0b03b8f1a0c794a86f
+
+PODFILE CHECKSUM: bac0c7119f8f41da22a7ba950c9e4f3a432f69fd
+
+COCOAPODS: 1.10.0

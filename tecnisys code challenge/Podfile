@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '13.0'
+
+target 'tecnisys code challenge' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for tecnisys code challenge
+  pod 'PureLayout'
+  pod 'SDWebImage'
+  pod 'RxSwift'
+  pod 'Alamofire'
+  pod "AlamofireRSSParser"
+  pod 'lottie-ios'
+
+  target 'tecnisys code challengeTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'tecnisys code challengeUITests' do
+    # Pods for testing
+  end
+
+end

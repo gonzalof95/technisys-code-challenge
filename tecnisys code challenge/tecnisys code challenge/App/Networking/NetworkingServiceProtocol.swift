@@ -9,5 +9,5 @@ import RxSwift
 import AlamofireRSSParser
 
 protocol NetworkServiceProtocol {
-    func execute(_ url: String) -> Observable<RSSFeed>
+    func execute(_ url: String) -> Observable<[NewModel]>
 }

@@ -7,8 +7,7 @@
 
 import Foundation
 import RxSwift
-import AlamofireRSSParser
 
 protocol NewsFeedServiceProtocol {
-    func execute() -> Observable<RSSFeed>
+    func execute() -> Observable<[NewModel]>
 }

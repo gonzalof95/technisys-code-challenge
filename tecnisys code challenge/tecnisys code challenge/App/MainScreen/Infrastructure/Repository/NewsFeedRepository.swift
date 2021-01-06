@@ -7,7 +7,6 @@
 
 import Foundation
 import RxSwift
-import AlamofireRSSParser
 
 class NewsFeedRepository: NewsFeedRepositoryProtocol {
     private let networkService: NetworkServiceProtocol
@@ -17,7 +16,7 @@ class NewsFeedRepository: NewsFeedRepositoryProtocol {
         self.networkService = networkService
     }
 
-    func getNews() -> Observable<RSSFeed> {
+    func getNews() -> Observable<[NewModel]> {
         return networkService.execute(url)
     }
 }

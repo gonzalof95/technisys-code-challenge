@@ -37,6 +37,15 @@
 		CEE2251125A567AC00FB5CAB /* DetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2251025A567AC00FB5CAB /* DetailViewControllerProtocol.swift */; };
 		CEE2251625A567B600FB5CAB /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2251525A567B600FB5CAB /* DetailPresenter.swift */; };
 		CEE2252025A56C2400FB5CAB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2251F25A56C2400FB5CAB /* DetailView.swift */; };
+		CEE2253A25A572D200FB5CAB /* BaseViewControllerProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2253925A572D200FB5CAB /* BaseViewControllerProtocolMock.swift */; };
+		CEE2254225A572DE00FB5CAB /* BaseViewControllerProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2254125A572DE00FB5CAB /* BaseViewControllerProtocolTest.swift */; };
+		CEE2254925A5745100FB5CAB /* NetworkServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2254825A5745100FB5CAB /* NetworkServiceMock.swift */; };
+		CEE2255125A5745B00FB5CAB /* NetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2255025A5745B00FB5CAB /* NetworkServiceTest.swift */; };
+		CEE2256B25A5771100FB5CAB /* ModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2256A25A5771100FB5CAB /* ModelMock.swift */; };
+		CEE2257425A57AA700FB5CAB /* NewsServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2257325A57AA700FB5CAB /* NewsServiceTest.swift */; };
+		CEE2257C25A57AB600FB5CAB /* NewsFileProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2257B25A57AB600FB5CAB /* NewsFileProtocolMock.swift */; };
+		CEE2258325A57B3700FB5CAB /* NewsRepositoryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2258225A57B3700FB5CAB /* NewsRepositoryMock.swift */; };
+		CEE2258B25A57B4500FB5CAB /* NewsRepositoryProtocolTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2258A25A57B4500FB5CAB /* NewsRepositoryProtocolTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +107,15 @@
 		CEE2251025A567AC00FB5CAB /* DetailViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerProtocol.swift; sourceTree = "<group>"; };
 		CEE2251525A567B600FB5CAB /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		CEE2251F25A56C2400FB5CAB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		CEE2253925A572D200FB5CAB /* BaseViewControllerProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocolMock.swift; sourceTree = "<group>"; };
+		CEE2254125A572DE00FB5CAB /* BaseViewControllerProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocolTest.swift; sourceTree = "<group>"; };
+		CEE2254825A5745100FB5CAB /* NetworkServiceMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMock.swift; sourceTree = "<group>"; };
+		CEE2255025A5745B00FB5CAB /* NetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTest.swift; sourceTree = "<group>"; };
+		CEE2256A25A5771100FB5CAB /* ModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMock.swift; sourceTree = "<group>"; };
+		CEE2257325A57AA700FB5CAB /* NewsServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsServiceTest.swift; sourceTree = "<group>"; };
+		CEE2257B25A57AB600FB5CAB /* NewsFileProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFileProtocolMock.swift; sourceTree = "<group>"; };
+		CEE2258225A57B3700FB5CAB /* NewsRepositoryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepositoryMock.swift; sourceTree = "<group>"; };
+		CEE2258A25A57B4500FB5CAB /* NewsRepositoryProtocolTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRepositoryProtocolTest.swift; sourceTree = "<group>"; };
 		EE4B621A4893D5D14DEDDA00 /* Pods_tecnisys_code_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tecnisys_code_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -188,6 +206,7 @@
 		CEE2242025A5287F00FB5CAB /* tecnisys code challengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				CEE2253525A5729300FB5CAB /* Unit Tests */,
 				CEE2242125A5287F00FB5CAB /* tecnisys_code_challengeTests.swift */,
 				CEE2242325A5287F00FB5CAB /* Info.plist */,
 			);
@@ -415,6 +434,110 @@
 				CEE2250B25A567A100FB5CAB /* DetailViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CEE2253525A5729300FB5CAB /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2253625A5729D00FB5CAB /* Resources */,
+				CEE2254625A5742B00FB5CAB /* App */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
+		CEE2253625A5729D00FB5CAB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2253725A572B200FB5CAB /* CustomViews */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CEE2253725A572B200FB5CAB /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2253825A572B700FB5CAB /* BaseViewController */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		CEE2253825A572B700FB5CAB /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2253925A572D200FB5CAB /* BaseViewControllerProtocolMock.swift */,
+				CEE2254125A572DE00FB5CAB /* BaseViewControllerProtocolTest.swift */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		CEE2254625A5742B00FB5CAB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2254725A5743B00FB5CAB /* Networking */,
+				CEE2255525A5746F00FB5CAB /* MainScreen */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CEE2254725A5743B00FB5CAB /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2254825A5745100FB5CAB /* NetworkServiceMock.swift */,
+				CEE2255025A5745B00FB5CAB /* NetworkServiceTest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CEE2255525A5746F00FB5CAB /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2255625A5748000FB5CAB /* Core */,
+				CEE2258025A57B1800FB5CAB /* Infrastructure */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+		CEE2255625A5748000FB5CAB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2256925A5770800FB5CAB /* Model */,
+				CEE2257225A57A8600FB5CAB /* Service */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CEE2256925A5770800FB5CAB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2256A25A5771100FB5CAB /* ModelMock.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEE2257225A57A8600FB5CAB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2257325A57AA700FB5CAB /* NewsServiceTest.swift */,
+				CEE2257B25A57AB600FB5CAB /* NewsFileProtocolMock.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CEE2258025A57B1800FB5CAB /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2258125A57B2000FB5CAB /* Repository */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CEE2258125A57B2000FB5CAB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2258225A57B3700FB5CAB /* NewsRepositoryMock.swift */,
+				CEE2258A25A57B4500FB5CAB /* NewsRepositoryProtocolTest.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -684,7 +807,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE2254925A5745100FB5CAB /* NetworkServiceMock.swift in Sources */,
+				CEE2256B25A5771100FB5CAB /* ModelMock.swift in Sources */,
+				CEE2257425A57AA700FB5CAB /* NewsServiceTest.swift in Sources */,
+				CEE2255125A5745B00FB5CAB /* NetworkServiceTest.swift in Sources */,
+				CEE2258325A57B3700FB5CAB /* NewsRepositoryMock.swift in Sources */,
+				CEE2254225A572DE00FB5CAB /* BaseViewControllerProtocolTest.swift in Sources */,
+				CEE2258B25A57B4500FB5CAB /* NewsRepositoryProtocolTest.swift in Sources */,
 				CEE2242225A5287F00FB5CAB /* tecnisys_code_challengeTests.swift in Sources */,
+				CEE2257C25A57AB600FB5CAB /* NewsFileProtocolMock.swift in Sources */,
+				CEE2253A25A572D200FB5CAB /* BaseViewControllerProtocolMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

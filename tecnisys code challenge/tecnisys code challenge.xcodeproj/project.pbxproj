@@ -32,6 +32,7 @@
 		CEE224E625A54CBE00FB5CAB /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE224E425A54CBE00FB5CAB /* NewsTableViewCell.swift */; };
 		CEE224E725A54CBE00FB5CAB /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE224E525A54CBE00FB5CAB /* NewsTableViewCell.xib */; };
 		CEE224F125A555D900FB5CAB /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE224F025A555D900FB5CAB /* NewsView.swift */; };
+		CEE2250225A5650500FB5CAB /* NetworkingServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2250125A5650500FB5CAB /* NetworkingServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		CEE224E425A54CBE00FB5CAB /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		CEE224E525A54CBE00FB5CAB /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		CEE224F025A555D900FB5CAB /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		CEE2250125A5650500FB5CAB /* NetworkingServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceProtocol.swift; sourceTree = "<group>"; };
 		EE4B621A4893D5D14DEDDA00 /* Pods_tecnisys_code_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tecnisys_code_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -288,6 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE2249625A5311600FB5CAB /* NetworkingService.swift */,
+				CEE2250125A5650500FB5CAB /* NetworkingServiceProtocol.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -601,6 +604,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEE224B125A5382D00FB5CAB /* NewsFeedService.swift in Sources */,
+				CEE2250225A5650500FB5CAB /* NetworkingServiceProtocol.swift in Sources */,
 				CEE2248225A52CEC00FB5CAB /* MainViewControllerProtocol.swift in Sources */,
 				CEE224E625A54CBE00FB5CAB /* NewsTableViewCell.swift in Sources */,
 				CEE224C225A53E4C00FB5CAB /* NewsFeedServiceProtocol.swift in Sources */,

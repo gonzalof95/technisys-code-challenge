@@ -45,7 +45,6 @@ class MainPresenter {
             for item in imageData {
                 let pair = item.first{ $0.key == "url" }
                 imageUrl = pair?.value ?? ""
-                print(imageUrl)
             }
 
             let new = NewModel(title: item.title,

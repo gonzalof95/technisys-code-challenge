@@ -9,7 +9,7 @@ import Alamofire
 import AlamofireRSSParser
 import RxSwift
 
-class NetworkService {
+class NetworkService: NetworkServiceProtocol {
     func execute(_ url: String) -> Observable<RSSFeed> {
         return Observable.create { observer -> Disposable in
 

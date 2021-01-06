@@ -10,10 +10,10 @@ import RxSwift
 import AlamofireRSSParser
 
 class NewsFeedRepository: NewsFeedRepositoryProtocol {
-    private let networkService: NetworkService
+    private let networkService: NetworkServiceProtocol
     private let url = "https://www.telegraph.co.uk/football/rss.xml"
 
-    init(networkService: NetworkService = NetworkService()) {
+    init(networkService: NetworkServiceProtocol = NetworkService()) {
         self.networkService = networkService
     }
 

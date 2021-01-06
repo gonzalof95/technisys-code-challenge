@@ -23,7 +23,8 @@ class NewsView: UIView {
 
     private func setView() {
         addSubview(tableView)
-        
+
+        tableView.rowHeight = 120
         tableView.autoPinEdgesToSuperviewEdges()
     }
 

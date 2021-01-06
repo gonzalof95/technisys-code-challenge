@@ -24,9 +24,13 @@ class MainPresenter {
     }
 
     private func getFeed() {
+        delegate?.showAnimation()
         service.execute().subscribe(onNext: { [weak self] response in
             self?.mapResponseToFeed(feed: response)
             DispatchQueue.main.async {
+                self?.delegate?.hideAnimation()
+                guard let news = self?.newsFeed else { return }
+                self?.delegate?.setupView(news)
             }
         }, onError: { error in
             debugPrint(error)
@@ -45,7 +49,7 @@ class MainPresenter {
             }
 
             let new = NewModel(title: item.title,
-                               description: item.description,
+                               description: item.itemDescription,
                                date: item.pubDate,
                                imageUrl: imageUrl)
             newsFeed.append(new)

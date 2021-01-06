@@ -40,8 +40,8 @@ extension BaseViewController: BaseViewControllerProtocol {
     func showAnimation() {
         animationView.animation = Animation.named("loading")
         animationView.frame = view.bounds
-        animationView.backgroundColor = .customColorMain
-        animationView.contentMode = .scaleAspectFit
+        animationView.backgroundColor = .customBackgroundColor
+        animationView.contentMode = .center
         animationView.loopMode = .loop
         animationView.play()
         view.addSubview(animationView)

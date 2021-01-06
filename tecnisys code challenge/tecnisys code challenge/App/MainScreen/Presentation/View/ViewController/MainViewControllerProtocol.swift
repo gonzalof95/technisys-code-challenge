@@ -6,4 +6,5 @@
 //
 
 protocol MainViewControllerProtocol: BaseViewControllerProtocol {
+    func setupView(_ news: [NewModel])
 }

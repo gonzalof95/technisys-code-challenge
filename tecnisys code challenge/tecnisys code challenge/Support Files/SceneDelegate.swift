@@ -8,13 +8,11 @@
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
     var window: UIWindow?
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         if let windowScene = scene as? UIWindowScene {
-            let client = NetworkService()
-            let presenter = MainPresenter(client)
+            let presenter = MainPresenter(service: NewsFeedService(repository: NewsFeedRepository()))
             let navigationController = UINavigationController(rootViewController: MainViewController(with: presenter))
             navigationController.navigationBar.prefersLargeTitles = true
 

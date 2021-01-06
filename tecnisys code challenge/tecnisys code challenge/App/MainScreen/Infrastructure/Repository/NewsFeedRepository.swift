@@ -6,14 +6,18 @@
 //
 
 import Foundation
+import RxSwift
 import AlamofireRSSParser
 
-class NewsFeedRepository {
+class NewsFeedRepository: NewsFeedRepositoryProtocol {
     private let networkService: NetworkService
-    private let url: String
+    private let url = "https://www.telegraph.co.uk/football/rss.xml"
 
-    init(networkService: NetworkService = NetworkService(), url: String) {
+    init(networkService: NetworkService = NetworkService()) {
         self.networkService = networkService
-        self.url = url
+    }
+
+    func getNews() -> Observable<RSSFeed> {
+        return networkService.execute(url)
     }
 }

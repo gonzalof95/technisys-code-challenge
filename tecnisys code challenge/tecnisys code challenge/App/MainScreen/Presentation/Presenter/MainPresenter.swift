@@ -12,10 +12,11 @@ import AlamofireRSSParser
 class MainPresenter {
     weak var delegate: MainViewControllerProtocol?
     private let disposebag = DisposeBag()
-    let client: NetworkService
+    private let service: NewsFeedServiceProtocol
 
-    required init(_ client: NetworkService) {
-        self.client = client
+
+    required init(service: NewsFeedServiceProtocol) {
+        self.service = service
     }
 
     func viewLoaded() {
@@ -23,7 +24,7 @@ class MainPresenter {
     }
 
     private func getFeed() {
-        client.execute(url: "https://www.telegraph.co.uk/football/rss.xml").subscribe(onNext: { [weak self] response in
+        service.execute().subscribe(onNext: { [weak self] response in
             print(response)
             DispatchQueue.main.async {
             }

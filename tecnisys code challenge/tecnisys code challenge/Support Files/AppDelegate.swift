@@ -9,12 +9,10 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        let client = NetworkService()
-        let presenter = MainPresenter(client)
+        let presenter = MainPresenter(service: NewsFeedService(repository: NewsFeedRepository()))
         let viewController = MainViewController(with: presenter)
         let navigationController = UINavigationController(rootViewController: viewController)
 

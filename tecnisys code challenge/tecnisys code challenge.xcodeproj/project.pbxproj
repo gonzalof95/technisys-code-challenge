@@ -23,6 +23,8 @@
 		CEE2247D25A52CAD00FB5CAB /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2247C25A52CAD00FB5CAB /* MainPresenter.swift */; };
 		CEE2248225A52CEC00FB5CAB /* MainViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2248125A52CEC00FB5CAB /* MainViewControllerProtocol.swift */; };
 		CEE2249725A5311600FB5CAB /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2249625A5311600FB5CAB /* NetworkingService.swift */; };
+		CEE224B125A5382D00FB5CAB /* NewsFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE224B025A5382D00FB5CAB /* NewsFeedService.swift */; };
+		CEE224B825A5386600FB5CAB /* NewsFeedRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE224B725A5386600FB5CAB /* NewsFeedRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		CEE2247C25A52CAD00FB5CAB /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		CEE2248125A52CEC00FB5CAB /* MainViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerProtocol.swift; sourceTree = "<group>"; };
 		CEE2249625A5311600FB5CAB /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		CEE224B025A5382D00FB5CAB /* NewsFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedService.swift; sourceTree = "<group>"; };
+		CEE224B725A5386600FB5CAB /* NewsFeedRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedRepository.swift; sourceTree = "<group>"; };
 		EE4B621A4893D5D14DEDDA00 /* Pods_tecnisys_code_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tecnisys_code_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -197,6 +201,7 @@
 		CEE2244E25A529CB00FB5CAB /* App */ = {
 			isa = PBXGroup;
 			children = (
+				CEE2249525A5310500FB5CAB /* Networking */,
 				CEE2247325A52C4500FB5CAB /* MainScreen */,
 			);
 			path = App;
@@ -231,7 +236,8 @@
 		CEE2247325A52C4500FB5CAB /* MainScreen */ = {
 			isa = PBXGroup;
 			children = (
-				CEE2249525A5310500FB5CAB /* Networking */,
+				CEE2249E25A5367C00FB5CAB /* Core */,
+				CEE224B525A5384A00FB5CAB /* Infrastructure */,
 				CEE2247425A52C6000FB5CAB /* Presentation */,
 			);
 			path = MainScreen;
@@ -269,6 +275,38 @@
 				CEE2249625A5311600FB5CAB /* NetworkingService.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		CEE2249E25A5367C00FB5CAB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				CEE224AE25A5381700FB5CAB /* Service */,
+			);
+			path = "\U0010Core";
+			sourceTree = "<group>";
+		};
+		CEE224AE25A5381700FB5CAB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				CEE224B025A5382D00FB5CAB /* NewsFeedService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		CEE224B525A5384A00FB5CAB /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				CEE224B625A5385600FB5CAB /* Repository */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		CEE224B625A5385600FB5CAB /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				CEE224B725A5386600FB5CAB /* NewsFeedRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,9 +545,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE224B125A5382D00FB5CAB /* NewsFeedService.swift in Sources */,
 				CEE2248225A52CEC00FB5CAB /* MainViewControllerProtocol.swift in Sources */,
 				CEE2247725A52C7700FB5CAB /* MainViewController.swift in Sources */,
 				CEE2246725A52B0100FB5CAB /* Constants.swift in Sources */,
+				CEE224B825A5386600FB5CAB /* NewsFeedRepository.swift in Sources */,
 				CEE2240B25A5287C00FB5CAB /* AppDelegate.swift in Sources */,
 				CEE2247D25A52CAD00FB5CAB /* MainPresenter.swift in Sources */,
 				CEE2249725A5311600FB5CAB /* NetworkingService.swift in Sources */,

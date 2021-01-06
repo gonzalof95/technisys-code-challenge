@@ -6,10 +6,12 @@
 //
 
 import Foundation
+import RxSwift
 import AlamofireRSSParser
 
 class MainPresenter {
     weak var delegate: MainViewControllerProtocol?
+    private let disposebag = DisposeBag()
     let client: NetworkService
 
     required init(_ client: NetworkService) {
@@ -21,9 +23,13 @@ class MainPresenter {
     }
 
     private func getFeed() {
-        client.execute(path: "https://www.telegraph.co.uk/football/rss.xml") { (feed: RSSFeed?, status: NetworkResponseStatus) in
-            print(feed)
-            print(status)
-        }
+        client.execute(url: "https://www.telegraph.co.uk/football/rss.xml").subscribe(onNext: { [weak self] response in
+            print(response)
+            DispatchQueue.main.async {
+            }
+        }, onError: { error in
+            debugPrint(error)
+        })
+        .disposed(by: disposebag)
     }
 }

@@ -55,21 +55,3 @@ extension MainViewController: MainViewControllerProtocol {
         setupTable(news)
     }
 }
-
-extension MainViewController: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return newsArray.count
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.identifier) as! NewsTableViewCell
-        cell.configure(with: newsArray[indexPath.row])
-        cell.detailButton.tag = indexPath.row
-        cell.detailButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        return cell
-    }
-
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-}

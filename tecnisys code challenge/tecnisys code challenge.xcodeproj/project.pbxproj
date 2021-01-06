@@ -10,6 +10,11 @@
 		3884047E17D1107F70D1A0E6 /* Pods_tecnisys_code_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E2489CCA805B14F0BE8DD4 /* Pods_tecnisys_code_challenge.framework */; };
 		576216BA37EC218BEAE116D0 /* Pods_tecnisys_code_challengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE4B621A4893D5D14DEDDA00 /* Pods_tecnisys_code_challengeTests.framework */; };
 		8957F60682F688D93F8E56E3 /* Pods_tecnisys_code_challenge_tecnisys_code_challengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C153A00B0E81D0B0145FF770 /* Pods_tecnisys_code_challenge_tecnisys_code_challengeUITests.framework */; };
+		CE98AF6925A5E86300702C5C /* MainViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98AF6825A5E86300702C5C /* MainViewControllerMock.swift */; };
+		CE98AF7125A5E86C00702C5C /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98AF7025A5E86C00702C5C /* MainPresenterTest.swift */; };
+		CE98AF7925A5EB6F00702C5C /* DetailViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98AF7825A5EB6F00702C5C /* DetailViewControllerMock.swift */; };
+		CE98AF8125A5EB7A00702C5C /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98AF8025A5EB7A00702C5C /* DetailPresenter.swift */; };
+		CE98AF8625A5EEE400702C5C /* MainViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE98AF8525A5EEE400702C5C /* MainViewController+Extension.swift */; };
 		CEE2240B25A5287C00FB5CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2240A25A5287C00FB5CAB /* AppDelegate.swift */; };
 		CEE2240D25A5287C00FB5CAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2240C25A5287C00FB5CAB /* SceneDelegate.swift */; };
 		CEE2241425A5287F00FB5CAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE2241325A5287F00FB5CAB /* Assets.xcassets */; };
@@ -74,6 +79,11 @@
 		77E0B65A5E72BFDC88E30887 /* Pods-tecnisys code challenge-tecnisys code challengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tecnisys code challenge-tecnisys code challengeUITests.release.xcconfig"; path = "Target Support Files/Pods-tecnisys code challenge-tecnisys code challengeUITests/Pods-tecnisys code challenge-tecnisys code challengeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		792A3F6E81B26746E1B7F7C8 /* Pods-tecnisys code challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tecnisys code challenge.release.xcconfig"; path = "Target Support Files/Pods-tecnisys code challenge/Pods-tecnisys code challenge.release.xcconfig"; sourceTree = "<group>"; };
 		C153A00B0E81D0B0145FF770 /* Pods_tecnisys_code_challenge_tecnisys_code_challengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tecnisys_code_challenge_tecnisys_code_challengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE98AF6825A5E86300702C5C /* MainViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerMock.swift; sourceTree = "<group>"; };
+		CE98AF7025A5E86C00702C5C /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
+		CE98AF7825A5EB6F00702C5C /* DetailViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerMock.swift; sourceTree = "<group>"; };
+		CE98AF8025A5EB7A00702C5C /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		CE98AF8525A5EEE400702C5C /* MainViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainViewController+Extension.swift"; sourceTree = "<group>"; };
 		CEE2240725A5287C00FB5CAB /* tecnisys code challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tecnisys code challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEE2240A25A5287C00FB5CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEE2240C25A5287C00FB5CAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -168,6 +178,32 @@
 				EE4B621A4893D5D14DEDDA00 /* Pods_tecnisys_code_challengeTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE98AF6725A5E83300702C5C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CE98AF6825A5E86300702C5C /* MainViewControllerMock.swift */,
+				CE98AF7025A5E86C00702C5C /* MainPresenterTest.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CE98AF7525A5EB3200702C5C /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CE98AF7625A5EB4400702C5C /* Presentarion */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		CE98AF7625A5EB4400702C5C /* Presentarion */ = {
+			isa = PBXGroup;
+			children = (
+				CE98AF7825A5EB6F00702C5C /* DetailViewControllerMock.swift */,
+				CE98AF8025A5EB7A00702C5C /* DetailPresenter.swift */,
+			);
+			path = Presentarion;
 			sourceTree = "<group>";
 		};
 		CEE223FE25A5287B00FB5CAB = {
@@ -301,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				CEE2247625A52C7700FB5CAB /* MainViewController.swift */,
+				CE98AF8525A5EEE400702C5C /* MainViewController+Extension.swift */,
 				CEE2248125A52CEC00FB5CAB /* MainViewControllerProtocol.swift */,
 			);
 			path = ViewController;
@@ -475,6 +512,7 @@
 			children = (
 				CEE2254725A5743B00FB5CAB /* Networking */,
 				CEE2255525A5746F00FB5CAB /* MainScreen */,
+				CE98AF7525A5EB3200702C5C /* DetailScreen */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -493,6 +531,7 @@
 			children = (
 				CEE2255625A5748000FB5CAB /* Core */,
 				CEE2258025A57B1800FB5CAB /* Infrastructure */,
+				CE98AF6725A5E83300702C5C /* Presentation */,
 			);
 			path = MainScreen;
 			sourceTree = "<group>";
@@ -788,6 +827,7 @@
 				CEE2247725A52C7700FB5CAB /* MainViewController.swift in Sources */,
 				CEE224F125A555D900FB5CAB /* NewsView.swift in Sources */,
 				CEE224CB25A53ECA00FB5CAB /* NewModel.swift in Sources */,
+				CE98AF8625A5EEE400702C5C /* MainViewController+Extension.swift in Sources */,
 				CEE2246725A52B0100FB5CAB /* Constants.swift in Sources */,
 				CEE224B825A5386600FB5CAB /* NewsFeedRepository.swift in Sources */,
 				CEE2250C25A567A100FB5CAB /* DetailViewController.swift in Sources */,
@@ -812,9 +852,13 @@
 				CEE2257425A57AA700FB5CAB /* NewsServiceTest.swift in Sources */,
 				CEE2255125A5745B00FB5CAB /* NetworkServiceTest.swift in Sources */,
 				CEE2258325A57B3700FB5CAB /* NewsRepositoryMock.swift in Sources */,
+				CE98AF8125A5EB7A00702C5C /* DetailPresenter.swift in Sources */,
+				CE98AF7925A5EB6F00702C5C /* DetailViewControllerMock.swift in Sources */,
 				CEE2254225A572DE00FB5CAB /* BaseViewControllerProtocolTest.swift in Sources */,
 				CEE2258B25A57B4500FB5CAB /* NewsRepositoryProtocolTest.swift in Sources */,
+				CE98AF7125A5E86C00702C5C /* MainPresenterTest.swift in Sources */,
 				CEE2242225A5287F00FB5CAB /* tecnisys_code_challengeTests.swift in Sources */,
+				CE98AF6925A5E86300702C5C /* MainViewControllerMock.swift in Sources */,
 				CEE2257C25A57AB600FB5CAB /* NewsFileProtocolMock.swift in Sources */,
 				CEE2253A25A572D200FB5CAB /* BaseViewControllerProtocolMock.swift in Sources */,
 			);

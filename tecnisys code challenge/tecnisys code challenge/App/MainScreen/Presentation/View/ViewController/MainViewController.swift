@@ -44,6 +44,10 @@ class MainViewController: BaseViewController {
         view.addSubview(strongCustomView)
         newsView?.autoPinEdgesToSuperviewEdges()
     }
+
+    @objc func buttonTapped(sender: UIButton) {
+        presenter?.rowTaped(new: newsArray[sender.tag])
+    }
 }
 
 extension MainViewController: MainViewControllerProtocol {
@@ -60,6 +64,8 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NewsTableViewCell.identifier) as! NewsTableViewCell
         cell.configure(with: newsArray[indexPath.row])
+        cell.detailButton.tag = indexPath.row
+        cell.detailButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         return cell
     }
 

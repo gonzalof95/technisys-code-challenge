@@ -33,6 +33,10 @@
 		CEE224E725A54CBE00FB5CAB /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CEE224E525A54CBE00FB5CAB /* NewsTableViewCell.xib */; };
 		CEE224F125A555D900FB5CAB /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE224F025A555D900FB5CAB /* NewsView.swift */; };
 		CEE2250225A5650500FB5CAB /* NetworkingServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2250125A5650500FB5CAB /* NetworkingServiceProtocol.swift */; };
+		CEE2250C25A567A100FB5CAB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2250B25A567A100FB5CAB /* DetailViewController.swift */; };
+		CEE2251125A567AC00FB5CAB /* DetailViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2251025A567AC00FB5CAB /* DetailViewControllerProtocol.swift */; };
+		CEE2251625A567B600FB5CAB /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2251525A567B600FB5CAB /* DetailPresenter.swift */; };
+		CEE2252025A56C2400FB5CAB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE2251F25A56C2400FB5CAB /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +94,10 @@
 		CEE224E525A54CBE00FB5CAB /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		CEE224F025A555D900FB5CAB /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		CEE2250125A5650500FB5CAB /* NetworkingServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceProtocol.swift; sourceTree = "<group>"; };
+		CEE2250B25A567A100FB5CAB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CEE2251025A567AC00FB5CAB /* DetailViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerProtocol.swift; sourceTree = "<group>"; };
+		CEE2251525A567B600FB5CAB /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		CEE2251F25A56C2400FB5CAB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		EE4B621A4893D5D14DEDDA00 /* Pods_tecnisys_code_challengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tecnisys_code_challengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -220,6 +228,7 @@
 			children = (
 				CEE2249525A5310500FB5CAB /* Networking */,
 				CEE2247325A52C4500FB5CAB /* MainScreen */,
+				CEE2250625A5666700FB5CAB /* DetailScreen */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -363,6 +372,49 @@
 				CEE224E525A54CBE00FB5CAB /* NewsTableViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		CEE2250625A5666700FB5CAB /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2250725A5677C00FB5CAB /* Presentation */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		CEE2250725A5677C00FB5CAB /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2250925A5678A00FB5CAB /* Views */,
+				CEE2250825A5678500FB5CAB /* Presenter */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CEE2250825A5678500FB5CAB /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2251525A567B600FB5CAB /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		CEE2250925A5678A00FB5CAB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2251F25A56C2400FB5CAB /* DetailView.swift */,
+				CEE2250A25A5678F00FB5CAB /* ViewController */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CEE2250A25A5678F00FB5CAB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEE2251025A567AC00FB5CAB /* DetailViewControllerProtocol.swift */,
+				CEE2250B25A567A100FB5CAB /* DetailViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -608,13 +660,17 @@
 				CEE2248225A52CEC00FB5CAB /* MainViewControllerProtocol.swift in Sources */,
 				CEE224E625A54CBE00FB5CAB /* NewsTableViewCell.swift in Sources */,
 				CEE224C225A53E4C00FB5CAB /* NewsFeedServiceProtocol.swift in Sources */,
+				CEE2252025A56C2400FB5CAB /* DetailView.swift in Sources */,
+				CEE2251625A567B600FB5CAB /* DetailPresenter.swift in Sources */,
 				CEE2247725A52C7700FB5CAB /* MainViewController.swift in Sources */,
 				CEE224F125A555D900FB5CAB /* NewsView.swift in Sources */,
 				CEE224CB25A53ECA00FB5CAB /* NewModel.swift in Sources */,
 				CEE2246725A52B0100FB5CAB /* Constants.swift in Sources */,
 				CEE224B825A5386600FB5CAB /* NewsFeedRepository.swift in Sources */,
+				CEE2250C25A567A100FB5CAB /* DetailViewController.swift in Sources */,
 				CEE2240B25A5287C00FB5CAB /* AppDelegate.swift in Sources */,
 				CEE2247D25A52CAD00FB5CAB /* MainPresenter.swift in Sources */,
+				CEE2251125A567AC00FB5CAB /* DetailViewControllerProtocol.swift in Sources */,
 				CEE2249725A5311600FB5CAB /* NetworkingService.swift in Sources */,
 				CEE224BD25A53D3400FB5CAB /* NewsFeedRepositoryProtocol.swift in Sources */,
 				CEE2246125A52AAF00FB5CAB /* BaseViewController.swift in Sources */,

@@ -30,15 +30,15 @@ class NewsTableViewCell: UITableViewCell {
         titleLabel.textColor = .black
         titleLabel.numberOfLines = 2
 
-        guard let date = new.date else { return }
-        dateLabel.text = String(describing: date)
-        dateLabel.font = UIFont(name: Fonts.main, size: 12)
-        dateLabel.textColor = .black
-
         descriptionLabel.text = new.description
         descriptionLabel.font = UIFont(name: Fonts.main, size: 10)
         descriptionLabel.textColor = .black
         descriptionLabel.numberOfLines = 0
+
+        guard let date = new.date else { return }
+        dateLabel.text = String(describing: date)
+        dateLabel.font = UIFont(name: Fonts.main, size: 12)
+        dateLabel.textColor = .black
     }
 
     override func awakeFromNib() {

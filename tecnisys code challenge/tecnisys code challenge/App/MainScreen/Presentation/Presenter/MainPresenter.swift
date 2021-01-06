@@ -54,4 +54,9 @@ class MainPresenter {
             newsFeed.append(new)
         }
     }
+
+    func rowTaped(new: NewModel) {
+        let presenter = DetailPresenter(with: new)
+        delegate?.pushNextViewController(DetailViewController(with: presenter))
+    }
 }
